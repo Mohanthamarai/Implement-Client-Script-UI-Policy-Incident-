@@ -1,0 +1,9 @@
+Policy name: High Impact Control
+Table: Incident
+Active: true
+On load: true
+Condition: Impact is 1 (High)
+Reverse if false: true
+Actions: Assignment group mandatory; Assigned to mandatory; Urgency read-only; leave visibility unchanged.
+Scripts: onChange on Impact; onSubmit; onCellEdit on State.
+Verify standard choice values and existing policies in the target instance before activation.
